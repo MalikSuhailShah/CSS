@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Animation</title>
+    <style>
+        body{
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      .container {
+        width: 30vw;
+        height: 30vh;
+        background-color: orangered;
+        border: 2px solid black;
+        animation: scaleRotation 4s ease-in-out 1s infinite alternate both;
+      }
+      @keyframes scaleRotation {
+        0% {
+          transform: rotate(0deg) scale(1);
+          background-color: orangered;
+        }
+        50% {
+          transform: rotate(180deg) scale(1.5);
+          background-color: yellow;
+        }
+        100% {
+          transform: rotate(360deg) scale(2);
+          background-color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Box</div>
+  </body>
+</html>

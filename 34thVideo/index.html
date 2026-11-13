@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      .cards {
+        border: 2px solid black;
+        display: flow-root;
+      }
+
+      .card {
+        border: 2px solid red;
+      }
+
+      img {
+        float: left; 
+        /* float values : 1) left 2) right*/
+      }
+
+      .card:nth-child(3) {
+        clear: left; 
+        /* clear values: 1) left 2) right 3) both*/
+        background-color: red;
+      }
+    </style>
+    <title>CSS Float and Clear</title>
+  </head>
+  <body>
+    <div class="cards">
+      <img
+        src="https://static.vecteezy.com/system/resources/thumbnails/049/686/420/small/boat-on-the-water-surface-from-top-view-turquoise-blue-water-background-from-top-view-summer-seascape-from-air-island-travel-and-vacation-image-free-photo.jpeg"
+        width="230px"
+      />
+
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat autem
+        quisquam doloribus voluptatibus a perferendis harum mollitia, impedit
+        expedita quod amet sint labore.
+      </div>
+      <div class="card">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos, magni lorem45
+
+        impedit obcaecati fugiat beatae fuga modi nesciunt dolore voluptatem?
+        Suscipit assumenda veniam optio incidunt necessitatibus repellat quia
+        quidem voluptates sapiente ipsam, beatae temporibus repellendus
+        blanditiis quos a voluptatibus, numquam nihil accusantium itaque. Harum!
+      </div>
+      <div class="card">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quo sit
+        sint totam numquam iure, quisquam provident. Placeat odio quas, vitae,
+        eum dolore reprehenderit natus accusamus, quis officia iusto fugit aut
+        numquam! Cum saepe doloribus molestias facere tempora optio sequi velit
+        sit sed id! Nobis corporis cum assumenda quod fuga voluptatibus,
+        pariatur, labore enim magnam doloremque dignissimos necessitatibus ullam
+        eius odit tempora, nam tempore ex ut. Quia.
+      </div>
+    </div>
+  </body>
+</html>
+

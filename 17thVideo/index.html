@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device - width, initial-scale=1.0" />
+
+    <title>Selectors In CSS</title>
+    <style>
+      /* Element Selector */
+      div {
+        color: aquamarine;
+        background-color: black;
+      }
+
+      /* class Selector */
+      .red {
+        color: rgb(191, 240, 161);
+        background-color: rgb(0, 0, 0);
+      }
+
+       /* ID Selectors */
+
+      #green {
+        color: rgb(226, 19, 119);
+        background-color: antiquewhite;
+      }
+
+      /* Descendent Selectors */
+
+      div p {
+        color: blue;
+        background-color: cadetblue;
+      }
+
+      /* Child Selectors */
+      div > p {
+        color: rgb(11, 8, 4);
+        background-color: yellow;
+      }
+
+      /* Universal Selectors */
+      *{
+        margin: 0;
+        padding: 0;
+      }
+     
+      /* Pseudo Selectors */
+
+      a:visited{
+        color:greenyellow;
+      }
+
+      a:hover{
+        background-color:red;
+      }
+
+      a:link{
+        color: rgb(89, 9, 228);
+      }
+
+      a:active{
+        background-color: rgb(218, 15, 93);
+      }
+
+      p:first-child{
+        color:orchid;
+        background-color: brown;
+      }
+
+     
+
+    </style>
+  </head>
+
+  <body>
+    <main class="one">
+      <p>I am the first child</p>
+      <p>I am the second child</p>
+    </main>
+
+    <div class="red">welcome to multiverse</div>
+
+    <div id="green">Whole World is against Muslims</div>
+
+    <div>
+      <article>
+        <p>Hello World</p>
+        <!--   this paragraph is not child of div it is descendent -->
+      </article>
+    </div>
+
+    <div>
+      <p>this gonna be my last year of engineering</p>
+      <!--   this paragraph is  child as well as descendent of div  -->
+    </div>
+
+    <a href="https://google.com">Go to Google</a>
+    <a href="https://facebook.com">Go to facebook</a>
+  </body>
+</html>

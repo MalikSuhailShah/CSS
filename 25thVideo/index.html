@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+    
+      nav ul li {
+        list-style: devanagari; /* list style => none removes marker from the list */
+         list-style-type: "😊";  /*  windows + . =>  for emojis */
+
+        list-style-position: inside;
+        /* this makes the marker indside the list item */
+
+        background-color: yellowgreen;
+        border: 2px solid red;
+
+        /* list-style-image: url("./image.jpeg ")  */
+         /* this image will be used as marker for the list items  , but we cannot resize the image  */
+
+        /* list-style: circle inside(position) url("./image.jpeg ");  all can be set in one statement*/
+
+
+      }
+
+     
+    </style>
+    <title>CSS List Styling</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <!-- List contains marker and the element , marker is present outside of the list item -->
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+  </body>
+</html>

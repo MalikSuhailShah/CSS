@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model In CSS</title>
+    <style>
+        .Box{
+            background-color: aqua;
+        }
+        .Box1{
+            color: rgb(231, 7, 44);
+            padding: 10px;
+            margin: 35px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;  /*this means that the height mention above includes border and padding also*/
+        }
+        .Box2{
+            color: rgb(244, 2, 195);
+             padding: 10px;
+            margin: 25px;
+            border: 2px solid rgb(8, 8, 10);
+            height: 200px;
+            box-sizing: border-box;  /* margin collapse concept*/
+        }
+    </style>
+</head>
+<body>
+    <div class="Box Box1">I am the first box</div>
+    <div class="Box Box2">I am the second Box</div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Layout</title>
+
+    <style>
+      :root {
+        --color: rgb(161, 95, 218);
+        --seccolor: rgb(233, 162, 162);
+        --tertcolor: rgb(255, 207, 207);
+        --bodycolor: rgb(208, 175, 236);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background-color: var(--bodycolor);
+      }
+      .navBar {
+        border: 2px solid black;
+        background-color: var(--color);
+        padding: 10px;
+        position: sticky;
+        top: 0;
+      }
+      .navBar a {
+        text-decoration: none;
+        margin: 5px;
+        padding: 15px;
+        color: white;
+        font-weight: bolder;
+      }
+      .navBar a:hover {
+        background-color: rgb(46, 63, 58);
+      }
+
+      .boxes::selection {
+        background-color: black;
+        color: aqua;
+      }
+      .Box1 {
+        border: 2px solid black;
+        width: 40vw;
+        height: 80vh;
+        padding: 5px;
+        margin: 15px 60px 10px 80px;
+        background-color: rgb(228, 120, 120);
+      }
+
+      .Box2 {
+        border: 2px solid black;
+        background-color: rgb(175, 69, 196);
+        width: 40vw;
+        height: 80vh;
+        padding: 5px;
+        margin: 15px 10px 10px 30px;
+      }
+
+      .boxes {
+        display: flex;
+        border: 2px solid black;
+        background-color: greenyellow;
+        text-align: center;
+      }
+
+      .secBox {
+        width: 95vw;
+        height: 30vh;
+        border: 2px solid black;
+        margin: 10px auto;
+        border-radius: 25px;
+        background-color: beige;
+        color: blue;
+        padding: 10px 10px 10px 15px;
+      }
+
+      .footer {
+        border: 2px solid black;
+        width: 100vw;
+        height: 10vh;
+        margin: 5px auto;
+        padding: 5px;
+        background-color: rgb(245, 155, 155);
+      }
+
+      .footer{
+        position: sticky;
+        bottom: 0;
+      }
+      img {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navBar">
+      <a href="#Home">Home</a>
+      <a href="#Home">Services</a>
+      <a href="#Home">About</a>
+      <a href="#Home">Contact Us</a>
+    </nav>
+
+    <div class="boxes">
+      <div class="Box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, id.
+        Suscipit quos totam, error saepe maiores beatae, placeat nam aperiam sit
+        illo obcaecati! Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit. Iste nulla illum consequatur hic, totam et dicta magni fugiat
+        tenetur veniam dignissimos ipsam.
+      </div>
+      <div class="Box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quisquam
+        reiciendis distinctio quaerat error nemo cupiditate saepe expedita vitae
+        mollitia sapiente, inventore corrupti? Ex nesciunt dolor quam vero
+        aspernatur, est rem a fugit laborum aliquid labore molestias similique
+        nisi odit harum recusandae fugiat. Non, ratione.
+      </div>
+    </div>
+
+    <div class="secBox">WELCOME TO SIGMA WEB DEVELOPMENT COURSE!!</div>
+
+    <div class="footer">Contact Details and Copyright Details</div>
+
+    <img src="circularIcon.jpg" width="150px" />
+  </body>
+</html>

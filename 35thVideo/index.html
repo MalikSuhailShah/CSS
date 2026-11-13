@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More On CSS Selector</title>
+
+    <style>
+      .boxes:first-child {  
+        
+        /* .boxes → Selects elements with the class boxes.
+            :first-child → Checks whether that element is the first child of its parent.*/
+        /* background-color: aqua; */
+        color: yellowgreen;
+      }
+
+      .boxes * {
+        /* => conditions applied  for every element of the class boxes*/
+        color: blue;
+        background-color: antiquewhite;
+        border: 2px solid black;
+      }
+
+      /*attribute selector*/
+      [data-color="primary"] { 
+        margin-top: 45px;
+        background-color: red;
+      }
+
+      /* grouping of selector*/
+      p,  a, .box, [data-color="primary"] { 
+        margin-top: 45px;
+        /* background-color: red; */
+      }
+
+      .box:nth-child(odd){  /* we can also select child according to our need i.e even/ odd  or by particular child number*/
+        background-color: yellow;
+      }
+
+      .boxes::before{
+        content:"dynamically inserted content with thw help of the before selector  and it is called pseudo elements";
+        color: blueviolet;
+      }
+
+      .boxes::after{
+        content:"dynamically inserted content with thw help of the after selector and it is called pseudo elements";
+
+        color:red;
+      }
+
+       .box::selection{
+        color: aqua; 
+        /* selection of text styling  fro any particular class*/
+        background-color: black;
+      }
+
+      /* ::selection{  => for all elements it is like universal selction styling
+        color: aqua;
+        background-color: black;
+      } */
+
+      .box::first-letter{
+        color: peru;
+        font-size: 23px;
+      }
+
+      input:placeholder{
+        color: brown;
+      }
+      
+
+    </style>
+  </head>
+  <body>
+    <div class="boxes">
+      <div data-color="primary" class="box">I am A box</div>
+      <div class="box">I am A box</div>
+      <div class="box">I am A box</div>
+      <input type="text" placeholder="Enter your Name">
+    </div>
+  </body>
+</html>

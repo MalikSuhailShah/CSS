@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-color: red;
+        margin: 10px;
+        padding: 5px;
+      }
+      .box {
+        background-color: blueviolet;
+        border: 2px solid rgb(0, 0, 0);
+        margin: 5px;
+        padding: 3px;
+        width: 150px;
+        height: 250px;
+      }
+       .container {
+          display: flex;
+        }
+
+        @media only screen and (orientation: portrait){
+            body{
+                 border: 20px solid yellowgreen;
+            }
+        }
+
+      @media only screen and (max-width:420px) {
+        /* media queries is to create responsive designs  i.e when webpage is used in different design then style get changes*/
+        body {
+          background-color: blue; /* this mean when width >=420px then background color becomes blue and when width  < 420px then background color becomes red*/
+        }
+
+        .container{
+            flex-direction: column;
+        }
+      }
+    </style>
+    <title>CSS Media Queries</title>
+  </head>
+  <body>
+    <div>Hey I am red body Guy!!!</div>
+
+    <div class="container">
+      <div class="box">h</div>
+      <div class="box">h</div>
+      <div class="box">h</div>
+    </div>
+  </body>
+</html>

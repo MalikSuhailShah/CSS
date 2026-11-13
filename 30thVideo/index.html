@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variable</title>
+
+    <style>
+      :root {
+        /* globalvariable*/
+        --color:rgba(238, 87, 11, 0.829);
+        --seccolor:rgb(255, 9, 218);
+
+
+        /* variables can also be used for other properties and not limited to color only */
+
+        --defpad:5px;/* for padding*/
+        --defop:.2;/* for opacity*/
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      div:first-child {
+        /* background-color: red; */
+        background-color: var(--color);
+        opacity: var(--defop);
+      }
+
+      .box {
+        /* background-color: rgb(244, 165, 165); */
+        background-color:var(--seccolor);
+        padding:var(--defpad);
+      }
+
+      ul li {
+        list-style: none;
+        padding: 15px;
+      }
+
+      ul li:first-child{
+        --color:blue; /* treated as local variable */
+        /* for this particular child value of color is updated(i.e orange to blue) inside value of color is blue and outside remains the orange*/
+        background-color: var(--color,blue); /*that is color variable is not found then blue color will be ised automatically*/
+      }
+      ul li:last-child{
+        --color:rgb(0, 255, 102);
+        /* treated as local variable */
+         /* for this particular child value of color is updated(i.e orange to green) inside value of color is green and outside remains the orange*/
+        background-color: var(--color,greenyellow);
+      }
+      ul {
+        display: flex;
+      }
+
+      .container{
+        background-color:var(--color);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <div class="box">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem,
+      nesciunt accusantium nulla quos nemo incidunt asperiores adipisci ab nam
+      iure maxime hic animi labore odit reprehenderit perferendis nisi ratione?
+      Autem labore officia suscipit? Corrupti perferendis dolore voluptatem
+      porro assumenda? Non veniam praesentium tenetur quae maxime?
+    </div>
+
+     <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem distinctio eveniet ullam itaque assumenda delectus, saepe totam libero.
+     </div>
+  </body>
+</html>

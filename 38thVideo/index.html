@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box IN CSS</title>
+
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 80vh;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+            align-items: flex-start;
+
+            /*there is no justify item in flex box*/
+
+
+            flex-wrap: wrap;
+
+            flex-flow: row wrap;
+
+            /* gap: 30px; */
+            /* row-gap: 50px; */
+            /* column-gap: 10px; */
+
+            gap: 40px 10px;
+
+        }
+
+        .item{
+            height: 92px;
+            width: 92px;
+            border: 2px solid red;
+            margin: 5px;
+            padding: 5px;
+
+            background-color: violet;
+
+            flex-grow: 1;
+
+        }
+
+        .item1{
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item1"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        
+    </div>
+    
+</body>
+</html>
